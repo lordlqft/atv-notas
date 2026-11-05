@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <main>
+        <section class="formulario">
+            <h1>Aluno</h1>
+            <form id="formulario">
+                <label for="aluno">Nome do aluno</label><br>
+                <input type="text" id="aluno" name="aluno" required><br><br>
+                <label for="idade">Idade do aluno</label><br>
+                <input type="number" id="idade" name="idade" required><br><br>
+                <label for="primeira-nota">Primeira nota</label><br>
+                <input type="number" id="primeira-nota" name="primeira-nota" min="0" max="10" required><br><br>
+                <label for="segunda-nota">Segunda nota</label><br>
+                <input type="number" id="segunda-nota" name="segunda-nota" min="0" max="10" required><br><br>
+                <label for="terceira-nota">Terceira nota</label><br>
+                <input type="number" id="terceira-nota" name="terceira-nota" min="0" max="10" required><br><br>
+
+                <button type="submit">Entrar</button>
+                <button type="reset">Limpar</button>
+
+        </section>
+
+        <section>
+            <h2 id="resultado"></h2>
+            <h2 id="situacao"></h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
